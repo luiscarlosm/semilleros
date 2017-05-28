@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'SectionalsController@listSectionals');
+
+Route::get('/messages/{message}', 'SectionalsController@show');
+
+Route::post('/messages/create', 'SectionalsController@create');
