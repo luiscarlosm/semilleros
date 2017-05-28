@@ -11,6 +11,6 @@
 
 **check your .env file**
 
-* db name: semilleros
-* db user: root
-* db password: ""
+* DB_DATABASE: semilleros
+* DB_USERNAME: root
+* DB_PASSWORD: ""
