@@ -13,6 +13,7 @@
 
 Route::get('/', 'SectionalsController@listSectionals');
 
-Route::get('/messages/{message}', 'SectionalsController@show');
+//Route::get('/sectionals/{sectional}', 'SectionalsController@show');
 
-Route::post('/messages/create', 'SectionalsController@create');
+Route::post('/sectionals/create', 'SectionalsController@create');
+Route::get('/sectionals', 'SectionalsController@listSectionals');

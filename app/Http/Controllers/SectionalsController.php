@@ -16,4 +16,12 @@ class SectionalsController extends Controller {
 		  ]);
 
     }
+
+    public function create() {
+      return 'Hola';
+    }
+
+    // public function show() {
+    //   return 'fuck';
+    // }
 }

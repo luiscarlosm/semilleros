@@ -7,6 +7,7 @@
 
   <title>Laravel</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
@@ -69,7 +70,8 @@
     @forelse($sectionals as $sectional)
     <div class="col-6">
       <p class="card-text">
-        {{ $sectional->name }}
+        <h1>{{ $sectional->id }}</h1>
+        <h3>{{ $sectional->name }}</h3>
       </p>
     </div>
     @empty
@@ -102,5 +104,6 @@
       </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 </body>
 </html>
