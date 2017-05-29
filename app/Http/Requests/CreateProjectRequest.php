@@ -27,6 +27,7 @@ class CreateProjectRequest extends FormRequest
             'name' => ['required', 'max:100'],
             'init_date' => ['required', 'max:100'],
             'observation' => ['required', 'max:100'],
+            'type_project' => ['required', 'max:100'],
             'research_centers_id' => ['required', 'max:100']
         ];
     }
@@ -42,6 +43,9 @@ class CreateProjectRequest extends FormRequest
 
             'observation.required' => 'Por favor, escriba la observacion.',
             'observation.max' => 'La observacion no puede superar los 100 caracteres.',
+
+            'type_project.required' => 'Por favor, escriba el tipo de proyecto.',
+            'type_project.max' => 'El tipo de proyecto no puede superar los 100 caracteres.',
 
             'research_centers_id.required' => 'Por favor, escriba el research_centers_id.',
             'research_centers_id.max' => 'El research_centers_id no puede superar los 100 caracteres.',

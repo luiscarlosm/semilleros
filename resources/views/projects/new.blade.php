@@ -18,6 +18,9 @@
         <input type="text" name="observation" class="form-control" placeholder="Observacion">
       </div>
       <div class="input-field">
+        <input type="text" name="type_project" class="form-control" placeholder="tipo de proyecto">
+      </div>
+      <div class="input-field">
         <input type="text" name="research_centers_id" class="form-control" placeholder="id Semillero">
       </div>
 

@@ -31,6 +31,7 @@ class ProjectsController extends Controller
           'name' => $request->input('name'),
           'init_date' => $request->input('init_date'),
           'observation' => $request->input('observation'),
+          'type_project' => $request->input('type_project'),
           'research_centers_id' => $request->input('research_centers_id'),
       ]);
 

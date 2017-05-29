@@ -18,6 +18,7 @@ class CreateProjectsTable extends Migration
             $table->String('name');
             $table->date('init_date');
             $table->text('observation');
+            $table->String('type_project');
             $table->integer('research_centers_id')->unsigned();
             $table->foreign('research_centers_id')->references('id')->on('research_centers');
 

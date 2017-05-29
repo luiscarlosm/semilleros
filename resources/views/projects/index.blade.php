@@ -25,7 +25,7 @@
         <td>{{ $project->name }}</td>
         <td>{{ $project->init_date }}</td>
         <td>{{ $project->observation }}</td>
-        <td>{{ $project->type_proyect }}</td>
+        <td>{{ $project->type_project }}</td>
         <td>{{ $project->research_centers_id }}</td>
       </tr>
       @empty
