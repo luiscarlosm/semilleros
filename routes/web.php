@@ -17,9 +17,7 @@ Route::get('/', 'SectionalsController@listSectionals');
 
 Route::post('/sectionals/create', 'SectionalsController@create');
 Route::get('/sectionals', 'SectionalsController@listSectionals');
-Route::get('/groups', 'GroupsController@listGroups');
-Route::get('/members', 'MembersController@listMembers');
-Route::get('/academic_programs', 'AcademicProgramsController@listAcademicPrograms');
 Route::get('/falculties', 'FacultiesController@listFalcuties');
 Route::get('/projects', 'ProjectsController@listProjects');
 Route::get('/research_centers', 'ResearchCentersController@listResearchCenters');
+Route::get('/events', 'EventsController@listEvents');
