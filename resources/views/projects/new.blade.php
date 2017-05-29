@@ -12,7 +12,7 @@
     		<input type="text" name="name" class="form-control" placeholder="Nombre">
     	</div>
       <div class="input-field">
-        <input type="text" name="init_date" class="form-control" placeholder="Fecha de Inicio">
+        <input type="date" name="init_date" class="form-control" placeholder="Fecha de Inicio">
       </div>
       <div class="input-field">
         <input type="text" name="observation" class="form-control" placeholder="Observacion">
