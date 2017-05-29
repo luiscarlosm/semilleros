@@ -12,6 +12,8 @@
     <tr>
       <th>ID</th>
       <th>Nombre</th>
+      <th>Tipo de investigacion<th>
+      <th>Programas academicos<th>
     </tr>
 
       @forelse($groups as $group)
