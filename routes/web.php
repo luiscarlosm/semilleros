@@ -21,3 +21,4 @@ Route::get('/falculties', 'FacultiesController@listFalcuties');
 Route::get('/projects', 'ProjectsController@listProjects');
 Route::get('/research_centers', 'ResearchCentersController@listResearchCenters');
 Route::get('/events', 'EventsController@listEvents');
+Route::get('/groups', 'GroupsController@listGroups');
