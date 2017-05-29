@@ -27,3 +27,4 @@ Route::get('/groups', 'GroupsController@listGroups');
 Route::get('/members', 'MembersController@listMembers');
 Route::get('/academic_programs', 'AcademicProgramsController@listAcademicPrograms');
 Route::get('/research_centers', 'ResearchCentersController@newResearchCenters');
+Route::post('/research_centers/create', 'ResearchCentersController@create');

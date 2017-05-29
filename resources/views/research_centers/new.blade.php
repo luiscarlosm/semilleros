@@ -6,7 +6,7 @@
 
 <section class="row">
   <div class="col s6">
-    <form action="/sectionals/create" method="post">
+    <form action="/research_centers/create" method="post">
     	<div class="input-field">
     		{{ csrf_field() }}
     		<input type="text" name="name" class="form-control" placeholder="Nombre">
