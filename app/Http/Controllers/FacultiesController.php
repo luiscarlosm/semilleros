@@ -8,9 +8,9 @@ class FacultiesController extends Controller
 {
   public function listFalcuties() {
 
-    $falcuties = Faculty::all();
+    $faculties = Faculty::all();
 
-    return view('welcome', [
+    return view('faculties.index', [
       'faculties' => $faculties,
     ]);
 

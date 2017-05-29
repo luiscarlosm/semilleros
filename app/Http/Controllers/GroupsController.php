@@ -11,7 +11,7 @@ class GroupsController extends Controller {
 
     	$groups = Group::all();
 
-	    return view('welcome', [
+	    return view('groups.index', [
 	    	'groups' => $groups,
 		  ]);
 
@@ -19,4 +19,6 @@ class GroupsController extends Controller {
     // public function show() {
     //   return 'fuck';
     // }
+
+    }
 }
