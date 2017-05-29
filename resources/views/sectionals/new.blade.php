@@ -2,6 +2,8 @@
 
 @include('layouts.nav')
 
+<br/>
+
 <section class="row">
   <div class="col s6">
     <form action="/sectionals/create" method="post">

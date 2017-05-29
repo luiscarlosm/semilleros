@@ -64,7 +64,9 @@ for execute your migrations
 
 for references between tables
 
-`$table->foreign('<foreign_key>')->references('<id_referenced_table>')->on('referenced_table');`
+```php
+$table->foreign('<foreign_key>')->references('<id_referenced_table>')->on('referenced_table');
+```
 
 
 * member -> Jesús
@@ -75,3 +77,46 @@ for references between tables
 * group -> Sebastian
 * research_center -> Roberto
 * project_audit -> Juan
+
+## Create your entity's views
+
+### Create the "new" view for your entity
+
+Go to `resources/views/<your-entity-folder>`
+
+create a view called `new.blade.php`
+
+and just copy the content of `esources/views/sectionals/new.blade.php` and paste it in `resources/views/<your-entity-folder>/new.blade.php`
+
+In your `new.blade.php` take a look to this code
+
+```html
+<div class="input-field">
+  {{ csrf_field() }}
+  <input type="text" name="name" class="form-control" placeholder="Nombre">
+</div>
+```
+
+You have to change the following attributes in the <input /> tag:
+
+`name="<theColumnNameOfYourEntityInCamelCaseLikePhpOrJavaVariables>"`
+
+`placeholder="<The name of the column / field in spanish (just write normal, like this)>"`
+
+**Repeat each div with all inside for each field, for example:**
+
+```html
+<div class="input-field">
+  {{ csrf_field() }}
+  <input type="text" name="id" class="form-control" placeholder="Id">
+</div>
+
+<div class="input-field">
+  {{ csrf_field() }}
+  <input type="text" name="name" class="form-control" placeholder="Nombre">
+</div>
+.
+.
+.
+
+```
