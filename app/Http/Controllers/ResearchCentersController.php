@@ -16,7 +16,7 @@ class ResearchCentersController extends Controller
     ]);
 
   }
-  public function newResearchCenter()
+  public function newResearchCenters()
 {
   return view('research_centers.new', []);
 }
