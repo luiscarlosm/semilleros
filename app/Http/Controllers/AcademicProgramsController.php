@@ -3,15 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\AcademicProgram;
 
-class AcademicProgramsControllers extends Controller
+class AcademicProgramsController extends Controller
 {
     //
     public function listAcademicPrograms() {
 
-    	$academicPrograms = AcademicPrograms::all();
+    	$academicPrograms = AcademicProgram::all();
 
-	    return view('welcome', [
+	    return view('academic_programs.index', [
 	    	'academicPrograms' => $academicPrograms,
 		  ]);
 
