@@ -15,6 +15,8 @@ Route::get('/', 'SectionalsController@listSectionals');
 
 //Route::get('/sectionals/{sectional}', 'SectionalsController@show');
 
+Route::get('/sectionals/new', 'SectionalsController@newSectional');
+Route::get('/sectionals/{sectional}', 'SectionalsController@show');
 Route::post('/sectionals/create', 'SectionalsController@create');
 Route::get('/sectionals', 'SectionalsController@listSectionals');
 Route::get('/faculties', 'FacultiesController@listFalcuties');

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Sectional;
+use App\Http\Requests\CreateSectionalRequest;
 use Illuminate\Http\Request;
 
 class SectionalsController extends Controller {
@@ -17,11 +18,24 @@ class SectionalsController extends Controller {
 
     }
 
-    public function create() {
-      return 'Hola';
+    public function create(CreateSectionalRequest $request)
+    {
+      $sectional = Sectional::create([
+          'name' => $request->input('name'),
+      ]);
+
+      return redirect('/sectionals/'.$sectional->id);
     }
 
-    // public function show() {
-    //   return 'fuck';
-    // }
+    public function newSectional()
+    {
+      return view('sectionals.new', []);
+    }
+
+    public function show(Sectional $sectional)
+    {
+    	return view('sectionals.show', [
+    		'sectional' => $sectional,
+    	]);
+    }
 }
