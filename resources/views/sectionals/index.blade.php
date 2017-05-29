@@ -25,6 +25,10 @@
       @endforelse
 
   </table>
+  <br />
+  <div class="center">
+    <a href="/sectionals/new" class="btn light-blue darken-4">Crear Seccional</a>
+  </div>
 
 </body>
 
