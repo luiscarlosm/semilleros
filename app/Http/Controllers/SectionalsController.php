@@ -11,7 +11,7 @@ class SectionalsController extends Controller {
 
     	$sectionals = Sectional::all();
 
-	    return view('welcome', [
+	    return view('sectionals.index', [
 	    	'sectionals' => $sectionals,
 		  ]);
 
