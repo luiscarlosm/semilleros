@@ -86,7 +86,7 @@ Go to `resources/views/<your-entity-folder>`
 
 create a view called `new.blade.php`
 
-and just copy the content of `esources/views/sectionals/new.blade.php` and paste it in `resources/views/<your-entity-folder>/new.blade.php`
+and just copy the content of `resources/views/sectionals/new.blade.php` and paste it in `resources/views/<your-entity-folder>/new.blade.php`
 
 In your `new.blade.php` take a look to this code
 
