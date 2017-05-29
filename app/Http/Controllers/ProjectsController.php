@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Project;
+use App\Http\Requests\CreateProjectRequest;
+use Illuminate\Http\Request;
+
+
 
 class ProjectsController extends Controller
 {
@@ -17,10 +20,22 @@ class ProjectsController extends Controller
 
     }
 
-    public function create() {
-      return 'Hola';
+    public function newProject()
+    {
+      return view('projects.new', []);
     }
 
+    public function create(CreateProjectRequest $request)
+    {
+      $project = Project::create([
+          'name' => $request->input('name'),
+          'init_date' => $request->input('init_date'),
+          'observation' => $request->input('observation'),
+          'research_centers_id' => $request->input('research_centers_id'),
+      ]);
+
+      return redirect('projects/'.$project->id);
+    }
     // public function show() {
     //   return 'fuck';
     // }

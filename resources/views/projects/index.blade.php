@@ -34,6 +34,11 @@
 
   </table>
 
+  <br />
+  <div class="center">
+    <a href="/projects/new" class="btn light-blue darken-4">Crear Proyecto</a>
+  </div>
+
 </body>
 
 </html>
