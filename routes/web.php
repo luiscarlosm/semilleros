@@ -23,3 +23,4 @@ Route::get('/research_centers', 'ResearchCentersController@listResearchCenters')
 Route::get('/events', 'EventsController@listEvents');
 Route::get('/groups', 'GroupsController@listGroups');
 Route::get('/members', 'MembersController@listMembers');
+Route::get('/academic_programs', 'AcademicProgramsController@listAcademicPrograms');
