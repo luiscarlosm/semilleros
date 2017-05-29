@@ -24,7 +24,7 @@
     		<input type="number" name="groups_id" class="form-control" placeholder="ID grupo">
     	</div>
       <div class="input-field">
-        <button type="submit" name="create" class="btn light-blue darken-4">Crear Seccional</button>
+        <button type="submit" name="create" class="btn light-blue darken-4">Crear semillero</button>
       </div>
     </form>
   </div>
