@@ -17,3 +17,5 @@ Route::get('/', 'SectionalsController@listSectionals');
 
 Route::post('/sectionals/create', 'SectionalsController@create');
 Route::get('/sectionals', 'SectionalsController@listSectionals');
+
+Route::get('/projects', 'ProjectsController@listProjects');
