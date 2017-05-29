@@ -66,6 +66,9 @@
   </style>
 </head>
 <body>
+
+  @include('layouts.nav');
+
   <div class="row">
     @forelse($researchCenters as $research_center)
     <div class="col-6">
@@ -104,6 +107,10 @@
       </div>
     </div>
   </div>
+  <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script type="text/javascript">
+    $(".button-collapse").sideNav();
+  </script>
 </body>
 </html>
