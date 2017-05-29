@@ -120,3 +120,28 @@ You have to change the following attributes in the <input /> tag:
 .
 
 ```
+
+### Create the "new" function/action in your entity controller
+
+Go to your entity controller, `app/Http/Controllers/<YourEntitiesController>` and create a new function called `new<EntityName>`, or just copy and paste the `newSectional` function from `SectionalsController` and change that name by your entity controller name as explained before.
+
+You need to change it like this:
+
+```php
+public function new<EntityName>()
+{
+  return view('<name_of_your_entity_views_folder>.new', []);
+}
+```
+
+With that, you will be able to display the view that contains your the creation form.
+
+### Add the route for display the form of your entity
+
+Go to `routes/web.php` and add a line like this:
+
+```php
+Route::get('/<your_entity_name_in_plural_and_separated_with_underscores>/new', '<YourControllerNames>Controller@new<YourEntityNameInSingularAndUpperCamelCase>');
+```
+
+It allows you to be able to navigate in `/<your_entity_names/new` and point it to your **new** function in your controller.
