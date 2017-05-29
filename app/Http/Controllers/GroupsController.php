@@ -11,7 +11,7 @@ class GroupsController extends Controller {
 
     	$groups = Group::all();
 
-	    return view('welcome', [
+	    return view('groups.index', [
 	    	'groups' => $groups,
 		  ]);
 
