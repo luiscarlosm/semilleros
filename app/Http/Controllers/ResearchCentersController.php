@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\ResearchCenter;
 use Illuminate\Http\Request;
 
 class ResearchCentersController extends Controller
 {
   public function listResearchCenters() {
 
-    $researchCenters = ResearchCenters::all();
+    $researchCenters = ResearchCenter::all();
 
-    return view('welcome', [
+    return view('research_centers.index', [
       'researchCenters' => $researchCenters,
     ]);
 
