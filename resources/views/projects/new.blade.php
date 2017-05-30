@@ -1,6 +1,8 @@
 @include('layouts.head')
 
-@include('layouts.nav')
+<body>
+  
+  @include('layouts.nav')
 
 <br/>
 
@@ -8,9 +10,9 @@
   <div class="col s6">
     <form action="/projects/create" method="post">
       {{ csrf_field() }}
-    	<div class="input-field">
-    		<input type="text" name="name" class="form-control" placeholder="Nombre">
-    	</div>
+      <div class="input-field">
+        <input type="text" name="name" class="form-control" placeholder="Nombre">
+      </div>
       <div class="input-field">
         <input type="date" name="init_date" class="form-control" placeholder="Fecha de Inicio">
       </div>
@@ -30,3 +32,9 @@
     </form>
   </div>
 </section>
+
+<section class="row">
+  <p>hola</p>
+</section>
+
+</body>

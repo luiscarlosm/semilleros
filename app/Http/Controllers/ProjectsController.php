@@ -35,7 +35,7 @@ class ProjectsController extends Controller
           'research_centers_id' => $request->input('research_centers_id'),
       ]);
 
-      return redirect('projects/'.$project->id);
+      return redirect('projects');
     }
     // public function show() {
     //   return 'fuck';
