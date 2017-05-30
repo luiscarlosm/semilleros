@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Faculty;
+use App\Http\Requests\CreateFacultyRequest;
 use Illuminate\Http\Request;
 
 class FacultiesController extends Controller
@@ -15,16 +17,18 @@ class FacultiesController extends Controller
     ]);
 
 }
-    public function create(CreateFacultiesRequest $request)
+    public function create(CreateFacultyRequest $request)
     {
-      $sectional = Faculty::create([
+      $faculty = Faculty::create([
           'name' => $request->input('name'),
+          'sectionals_id' => $request -> input('sectionals_id'),
+
       ]);
 
       return redirect('/faculties/'.$faculty->id);
     }
 
-    public function newFalculty()
+    public function newFaculty()
     {
       return view('faculties.new', []);
     }
