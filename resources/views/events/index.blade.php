@@ -36,6 +36,9 @@
       @endforelse
 
   </table>
+<br />
+  <div class="center">
+    <a href="/events/new" class="btn light-blue darken-4">Crear Eventos</a>
 
 </body>
 

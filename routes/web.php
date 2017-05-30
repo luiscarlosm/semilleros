@@ -25,6 +25,8 @@ Route::get('/projects/new', 'ProjectsController@newProject');
 Route::post('/projects/create', 'ProjectsController@create');
 Route::get('/research_centers', 'ResearchCentersController@listResearchCenters');
 Route::get('/events', 'EventsController@listEvents');
+Route::get('/events/new', 'EventsController@newEvent');
+Route::post('/events/create', 'EventsController@create');
 Route::get('/groups', 'GroupsController@listGroups');
 Route::get('/members', 'MembersController@listMembers');
 Route::get('/academic_programs', 'AcademicProgramsController@listAcademicPrograms');
