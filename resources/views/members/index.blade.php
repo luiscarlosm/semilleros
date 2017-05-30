@@ -14,7 +14,7 @@
       <th>Nombre</th>
       <th>Apellido</th>
       <th>Email</th>
-      <th>Movil</th>
+      <th>Móvil</th>
       <th>Tipo Documento</th>
       <th>Tipo</th>
       <th>Id Proyecto</th>
@@ -37,10 +37,15 @@
         <td>{{ $member->user_id }}</td>
       </tr>
       @empty
-      <p>No hay seccionales en el sistema.</p>
+      <p>No hay integrantes en el sistema.</p>
       @endforelse
 
   </table>
+
+  <br />
+  <div class="center">
+    <a href="/members/new" class="btn light-blue darken-4">Crear Integrante</a>
+  </div>
 
 </body>
 
