@@ -4,7 +4,7 @@
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a href="/sectionals">Sectionals</a></li>
       <li><a href="/faculties">Faculties</a></li>
-      <li><a href="/groups">Groups</a></li>
+      <li><a href="/">Home</a></li>
     </ul>
   </div>
 </nav>
