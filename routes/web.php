@@ -22,6 +22,8 @@ Route::get('/sectionals', 'SectionalsController@listSectionals');
 Route::get('/faculties', 'FacultiesController@listFalcuties');
 Route::get('/faculties/new', 'FacultiesController@newFalculty');
 Route::get('/projects', 'ProjectsController@listProjects');
+Route::get('/projects/new', 'ProjectsController@newProject');
+Route::post('/projects/create', 'ProjectsController@create');
 Route::get('/research_centers', 'ResearchCentersController@listResearchCenters');
 Route::get('/events', 'EventsController@listEvents');
 Route::get('/groups', 'GroupsController@listGroups');
