@@ -24,7 +24,6 @@
         <input type="text" name="research_centers_id" class="form-control" placeholder="id Semillero">
       </div>
 
-
       <div class="input-field">
         <button type="submit" name="create" class="btn light-blue darken-4">Crear Proyecto</button>
       </div>
