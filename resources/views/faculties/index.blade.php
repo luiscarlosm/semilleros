@@ -27,6 +27,12 @@
       @endforelse
 
   </table>
+  <br />
+  <div class="center">
+    <a href="/faculties/new" class="btn light-blue darken-4">Crear Facultades</a>
+
+
+</body>
 
 </body>
 
