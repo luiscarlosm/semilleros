@@ -15,7 +15,7 @@ class CreateFacultiesTable extends Migration
     {
         Schema::create('faculties', function (Blueprint $table) {
             $table->increments('id');
-            $table->String('name');
+            $table->string('name');
             $table->integer('sectionals_id')->unsigned();
             $table->foreign('sectionals_id')->references('id')->on('sectionals');
 
