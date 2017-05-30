@@ -12,9 +12,6 @@
 */
 
 Route::get('/', 'SectionalsController@listSectionals');
-
-//Route::get('/sectionals/{sectional}', 'SectionalsController@show');
-
 Route::get('/sectionals/new', 'SectionalsController@newSectional');
 Route::get('/sectionals/{sectional}', 'SectionalsController@show');
 Route::post('/sectionals/create', 'SectionalsController@create');
@@ -29,3 +26,6 @@ Route::get('/events', 'EventsController@listEvents');
 Route::get('/groups', 'GroupsController@listGroups');
 Route::get('/members', 'MembersController@listMembers');
 Route::get('/academic_programs', 'AcademicProgramsController@listAcademicPrograms');
+Route::get('/research_centers', 'ResearchCentersController@listResearchCenters');
+Route::get('/research_centers/new', 'ResearchCentersController@newResearchCenters');
+Route::post('/research_centers/create', 'ResearchCentersController@create');
