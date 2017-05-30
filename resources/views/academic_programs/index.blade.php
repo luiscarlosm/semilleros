@@ -18,12 +18,12 @@
 
       @forelse($academicPrograms as $academicProgram)
       <tr>
-        <td>{{ $meacademicProgrammber->id }}</td>
+        <td>{{ $academicProgram->id }}</td>
         <td>{{ $academicProgram->names }}</td>
         <td>{{ $academicProgram->faculties_id }}</td>
       </tr>
       @empty
-      <p>No hay seccionales en el sistema.</p>
+      <p>No hay Programas Academicos en el sistema.</p>
       @endforelse
 
   </table>
