@@ -20,7 +20,7 @@
         <input type="text" name="academic_programs_id" class="form-control" placeholder="Id del Programa Academico">
       </div>
       <div  clase = " input-field" >
-        <input type="text" name="sectionals_id" class="form-control" placeholder="Integrantes">
+        <input type="text" name="sectionals_id" class="form-control" placeholder="seccional id">
       </div>
       <div class="input-field">
         <button type="submit" name="create" class="btn light-blue darken-4">Crear Integrantes</button>

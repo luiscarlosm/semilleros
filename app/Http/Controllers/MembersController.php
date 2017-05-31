@@ -13,9 +13,11 @@ class MembersController extends Controller
 	public function listMembers() {
 
 		$members = Member::all();
+		$user = new \App\User;
 
 		return view('members.index', [
 			'members' => $members,
+			'user' => $user
 		]);
 
 	}
