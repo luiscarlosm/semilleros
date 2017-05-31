@@ -27,7 +27,13 @@
       <p>No hay grupos en el sistema.</p>
       @endforelse
 
-  </table>
+ </table>
+  <br />
+  <div class="center">
+    <a href="/groups/new" class="btn light-blue darken-4">Crear Grupos</a>
+
+
+</body>
 
 </body>
 
