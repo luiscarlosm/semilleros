@@ -33,5 +33,11 @@ class ResearchCentersController extends Controller
 {
   return view('research_centers.new', []);
 }
+public function show(ResearchCenter $research_centers)
+{
+  return view('research_centers.show', [
+    'sectional' => $sectional,
+  ]);
+}
 
 }

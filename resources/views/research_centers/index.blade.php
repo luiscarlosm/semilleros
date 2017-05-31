@@ -30,8 +30,11 @@
       <p>No hay semilleros en el sistema.</p>
       @endforelse
 
-  </table>
 
+  </table>
+  <div class="center">
+    <a href="/research_centers/new" class="btn light-blue darken-4">Crear semillero</a>
+  </div>
 </body>
 
 </html>
