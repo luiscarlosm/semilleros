@@ -12,16 +12,18 @@
     <tr>
       <th>ID</th>
       <th>Nombre</th>
-      <th>Facultades</th>
+
       </tr>
 
 
       @forelse($academicPrograms as $academicProgram)
       <tr>
         <td>{{ $academicProgram->id }}</td>
-        <td>{{ $academicProgram->names }}</td>
-        <td>{{ $academicProgram->faculties_id }}</td>
+        <td>{{ $academicProgram->name }}</td>
+
+
       </tr>
+
       @empty
       <p>No hay Programas Academicos en el sistema.</p>
       @endforelse

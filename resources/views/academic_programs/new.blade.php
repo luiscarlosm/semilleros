@@ -6,12 +6,11 @@
 
 <section class="row">
   <div class="col s6">
-    <form action="/academicPrograms/create" method="post">
+    <form action="/academic_programs/create" method="post">
       <div  clase = " input-field" >
         {{ csrf_field() }}
         <input type="text" name="name" class="form-control" placeholder="Nombre">
       </div>
-
       <div  clase = " input-field" >
         <input type="text" name="faculties_id" class="form-control" placeholder="Faculty">
       </div>

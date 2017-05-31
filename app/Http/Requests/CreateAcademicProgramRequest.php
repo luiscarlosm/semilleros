@@ -30,7 +30,7 @@ class CreateAcademicProgramRequest extends FormRequest
         ];
     }
 
-    public function academicprograms()
+    public function academicPrograms()
     {
         return [
             'name.required' => 'Por favor, escriba el nombre.',
