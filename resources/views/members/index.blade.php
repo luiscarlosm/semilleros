@@ -19,7 +19,7 @@
       <th>Tipo</th>
       <th>Id Proyecto</th>
       <th>Id Academico</th>
-      <th>Id Usuario</th>
+      <th>Nombre del usuario</th>
       </tr>
 
 
@@ -34,7 +34,7 @@
         <td>{{ $member->type }}</td>
         <td>{{ $member->projects_id }}</td>
         <td>{{ $member->academic_programs_id }}</td>
-        <td>{{ $member->users_id }}</td>
+        <td>{{ $user::find($member->users_id)->name }} </td>
       </tr>
       @empty
       <p>No hay integrantes en el sistema.</p>
