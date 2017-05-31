@@ -10,9 +10,6 @@ use Illuminate\Http\Request;
 class MembersController extends Controller
 {
 
-	// $user = Auth::user();
-	// $id = Auth::id();
-
 	public function listMembers() {
 
 		$members = Member::all();
@@ -25,18 +22,21 @@ class MembersController extends Controller
 
 	public function create(CreateMembersRequest $request)
 	{
+		$user = Auth::user();
+		$id = Auth::id();
 		$member = Member::create([
-				'name' => $request->input('names'),
+				'names' => $request->input('names'),
 				'lastnames' => $request->input('lastnames'),
 				'email' => $request->input('email'),
 				'movil' => $request->input('movil'),
+				'type' => $request->input('type'),
 				'doc_type' => $request->input('doc_type'),
 				'projects_id' => $request->input('projects_id'),
 				'academic_programs_id' => $request->input('academic_programs_id'),
-				'users_id' => $request->input('users_id'),
+				'users_id' => $id,
 		]);
-
-		return redirect('/members/'.$member->id);
+		return $id;
+		// return redirect('/members/'.$member->id);
 	}
 
 	public function newMember()

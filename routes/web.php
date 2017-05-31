@@ -35,3 +35,7 @@ Route::get('/academic_programs', 'AcademicProgramsController@listAcademicProgram
 Route::get('/research_centers', 'ResearchCentersController@listResearchCenters');
 Route::get('/research_centers/new', 'ResearchCentersController@newResearchCenters');
 Route::post('/research_centers/create', 'ResearchCentersController@create');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
