@@ -32,9 +32,9 @@
         <td>{{ $member->movil }}</td>
         <td>{{ $member->doc_type }}</td>
         <td>{{ $member->type }}</td>
-        <td>{{ $member->project_id }}</td>
-        <td>{{ $member->academic_prograns_id }}</td>
-        <td>{{ $member->user_id }}</td>
+        <td>{{ $member->projects_id }}</td>
+        <td>{{ $member->academic_programs_id }}</td>
+        <td>{{ $member->users_id }}</td>
       </tr>
       @empty
       <p>No hay integrantes en el sistema.</p>
